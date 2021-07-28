@@ -49,10 +49,11 @@ p {
 .wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    padding-top: 72px;
 }
 
 .offer {
-    margin-top: 166px;
     width: 487px;
 }
 
@@ -76,10 +77,6 @@ p {
 
 .btn:hover {
     background-color: #ce7800;
-}
-
-.desktop {
-    margin-top: 72px;
 }
 
 /* section 2 */
@@ -159,4 +156,100 @@ p {
     color: #d4cee3;
     font-size: 14px;
     margin: 0;
+}
+
+
+
+/* Responsive */
+
+/* 993px - 1200px */
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 960px;
+    }
+
+    .header {
+        padding-top: 80px;
+    }
+}
+
+/* 769px - 992px */
+@media screen and (max-width: 992px) {
+    .container {
+        width: 720px;
+    }
+
+    .header {
+        padding-top: 50px;
+    }
+    
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .offer {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .header .btn {
+        width: 100%;
+    }
+
+    /* section learn */
+
+    .section-title {
+        text-align: center;
+    }
+
+    .goals {
+        flex-direction: column;
+    }
+
+    .goal {
+        margin-bottom: 30px;
+    }
+
+    /* section mail */
+
+    .input, .btn-form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .btn-form {
+        margin: 30px 0 0;
+    }
+}
+
+/* 577px - 768px */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 540px;
+    }
+
+    .header {
+        padding-top: 20px;
+    }
+
+    .offer {
+        width: 90%;
+    }
+
+    .intro {
+        width: 90%;
+    }
+
+    .desktop {
+        width: 90%;
+    }
+}
+
+/* < 576px */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 90%;
+    }
 }
